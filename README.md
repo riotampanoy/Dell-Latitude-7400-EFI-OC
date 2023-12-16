@@ -60,8 +60,5 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 
 
 <details>  
-![Uploading Screenshot 2023-12-17 at 01.28.11.png…]()
-
-
 
 </details>  
