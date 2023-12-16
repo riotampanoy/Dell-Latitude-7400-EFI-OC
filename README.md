@@ -27,7 +27,7 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 | Processor          | Intel Core i7-8665U                                               |
 | Graphics           | Intel UHD Graphics 620                                            |
 | Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
-| Display            | 14" WXGA 1920x1080 FHD LCD                                        |
+| Display            | 14" FHD 1920x1080 LCD                                             |
 | Storage NVME       | ADATA XPG SX 8200 Pro (SetApfsTrimTimeout=0 Because NAND Problem) |
 | WLAN + Bluetooth   | Intel Wireless AC 9560                                            |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
