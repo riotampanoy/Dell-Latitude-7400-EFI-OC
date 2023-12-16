@@ -11,6 +11,7 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 <details>  
 <summary><strong>Overview</strong></summary>
 </br>
+- Use Latest Bios 1.28.0</br>
 - Improve Backlight Smoother</br>
 - Latest OpenCore 0.9.8</br>
 - Support macOS Ventura 13.x - Sonoma 14.x</br>
