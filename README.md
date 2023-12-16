@@ -34,6 +34,7 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 | Camera             | HD Webcam                                                         |
 | Soundcard          | Realtek ALC295                                                    |
 | Trackpad           | Dell I2C Touchpad                                                 |
+| Thunderbolt        | Intel JHL6240 Alpine Ridge Thunderbolt 3                          |
 
 
 </details>
@@ -42,7 +43,8 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 </br>
 
 - [x] Intel UHD 620 Graphics
-- [x] All USB ports (Included USB-CRW)
+- [x] All USB ports
+- [x] Thunderbolt Ports
 - [x] Internal Camera
 - [x] WiFi+Bluetooth
 - [x] Shutdown/ Reboot/ Sleep/ Wake 
@@ -58,6 +60,8 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 
 
 <details>  
+![Uploading Screenshot 2023-12-17 at 01.28.11.png…]()
+
 
 
 </details>  
