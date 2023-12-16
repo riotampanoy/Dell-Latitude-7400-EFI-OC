@@ -22,7 +22,7 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 <summary><strong>My Hardware</strong></summary>
 </br>
 
-| Model              | Dell Vostro 3490                       |
+| Model              | Dell Latitude 7400                                                |
 |:-------------------|:------------------------------------------------------------------|
 | Processor          | Intel Core i7-8665U                                               |
 | Graphics           | Intel UHD Graphics 620                                            |
