@@ -60,6 +60,5 @@ Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar
 
 
 <details>  
-![Screenshot 2023-12-17 at 01 28 11]([https://github.com/riotampanoy/Dell-Latitude-7400/blob/main/Screenshot/Screenshot%202023-12-17%20at%2001.28.11.png)
 
 </details>  
