@@ -58,7 +58,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 
 </details>
 
-Don't complaining everything you take here!!
+Don't complain everything you take here!!
 
 
 <details>
