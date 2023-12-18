@@ -1,6 +1,6 @@
-<strong>DELL VOSTRO 3490 Hackintosh OpenCore EFI</strong></br></br>
+<strong>DELL VOSTRO 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Mod Hidden Bios Setting with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+Before boot to opencore, update your Bios to version 1.28.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
