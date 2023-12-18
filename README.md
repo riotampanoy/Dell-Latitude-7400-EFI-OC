@@ -58,6 +58,8 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 
 </details>
 
+Don't just take and use it
+
 
 <details>
 <img src="https://github.com/riotampanoy/Dell-Latitude-7400/blob/main/Screenshot/Screenshot%202023-12-17%20at%2001.28.11.png?raw=true"/></br>
