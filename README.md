@@ -55,7 +55,8 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] Keyboard and Trackpad (multi gesture trackpad)
 - [x] Airdrop , Handoff , Sidecar 
 - [x] VT-D enable on bios with uncheck disableiomapper kernel quirk
-
+- [x] Undervolting with Voltageshift to decrease temp
+      
 </details>
 
 Don't complain everything you take here!!
