@@ -28,7 +28,8 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 | Graphics           | Intel UHD Graphics 620                                            |
 | Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
 | Display            | 14" FHD 1920x1080 LCD                                             |
-| Storage NVME       | ADATA XPG SX 8200 Pro (SetApfsTrimTimeout=0 Because NAND Problem) |
+| Storage NVME       | Samsung EVO 970 Plus NVMe 500GB (SetApfsTrimTimeout=0)            |
+| Storage NVME       | WD SN520 250GB NVMe 2242 on WWAN Slot (Windows 10)                |
 | WLAN + Bluetooth   | Intel Wireless AC 9560                                            |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
 | Camera             | HD Webcam                                                         |
@@ -48,7 +49,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] Internal Camera
 - [x] WiFi+Bluetooth
 - [x] Shutdown/ Reboot/ Sleep/ Wake 
-- [x] Speakers and headphones jack (Use ALCPlugFix)
+- [x] Speakers and Headphones Jack (Use ALCPlugFix)
 - [x] App Store
 - [x] iMessage and Facetime 
 - [x] HDMI Output + Audio
@@ -56,6 +57,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] Airdrop , Handoff , Sidecar 
 - [x] VT-D enable on bios with uncheck disableiomapper kernel quirk
 - [x] Undervolting with Voltageshift to decrease temp
+- [ ] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
       
 </details>
 
