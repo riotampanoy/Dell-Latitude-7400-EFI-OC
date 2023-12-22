@@ -57,7 +57,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] Airdrop , Handoff , Sidecar 
 - [x] VT-D enable on bios with uncheck disableiomapper kernel quirk
 - [x] Undervolting with Voltageshift to decrease temp
-- [ ] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
+- [x] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
       
 </details>
 
