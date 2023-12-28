@@ -32,7 +32,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 | Display            | 14" FHD 1920x1080 LCD                                             |
 | Storage NVME       | Crucial P5 Plus 1TB                                               |
 | Storage NVME       | WD SN520 250GB NVMe 2242 on WWAN Slot (Windows 10)                |
-| WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel                         |
+| WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel 9560 WiFi Card)         |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
 | Camera             | HD Webcam                                                         |
 | Soundcard          | Realtek ALC295                                                    |
