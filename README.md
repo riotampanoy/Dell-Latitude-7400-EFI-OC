@@ -14,7 +14,9 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - Use Latest Bios 1.28.0</br>
 - Improve Backlight Smoother</br>
 - Latest OpenCore 0.9.8</br>
-- Support macOS Ventura 13.x for Sonoma change "enable-backlight-registers-fix" on Device Properties IGPU to "enable-backlight-registers-alternative-fix"</br>
+- Support macOS Ventura 13.x for Sonoma 14.x</br>
+- if use default Intel WiFi card use AirPortIwlm kext
+- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher 1.3.0
 
 </details>
 
@@ -28,9 +30,9 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 | Graphics           | Intel UHD Graphics 620                                            |
 | Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
 | Display            | 14" FHD 1920x1080 LCD                                             |
-| Storage NVME       | Samsung EVO 970 Plus NVMe 500GB (SetApfsTrimTimeout=0)            |
+| Storage NVME       | Crucial P5 Plus 1TB                                               |
 | Storage NVME       | WD SN520 250GB NVMe 2242 on WWAN Slot (Windows 10)                |
-| WLAN + Bluetooth   | Intel Wireless AC 9560                                            |
+| WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel                         |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
 | Camera             | HD Webcam                                                         |
 | Soundcard          | Realtek ALC295                                                    |
@@ -47,7 +49,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] All USB ports
 - [x] Thunderbolt Ports
 - [x] Internal Camera
-- [x] WiFi+Bluetooth
+- [x] WiFi+Bluetooth (Airdrop, Handoff and Continuity)
 - [x] Shutdown/ Reboot/ Sleep/ Wake 
 - [x] Speakers and Headphones Jack (Use ALCPlugFix)
 - [x] App Store
