@@ -30,7 +30,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 | Graphics           | Intel UHD Graphics 620                                            |
 | Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
 | Display            | 14" FHD 1920x1080 LCD                                             |
-| Storage NVME       | Crucial P5 Plus 1TB                                               |
+| Storage NVME       | Crucial P5 Plus 1TB NVMe 2280 (macOS)                             |
 | Storage NVME       | WD SN520 250GB NVMe 2242 on WWAN Slot (Windows 10)                |
 | WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel 9560 WiFi Card)         |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
