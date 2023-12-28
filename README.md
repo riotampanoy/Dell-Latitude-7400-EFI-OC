@@ -15,7 +15,7 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - Improve Backlight Smoother</br>
 - Latest OpenCore 0.9.8</br>
 - Support macOS Ventura 13.x for Sonoma 14.x</br>
-- if use default Intel WiFi card use AirPortIwlm kext
+- if use default Intel WiFi card use AirPortIwlm kext</br>
 - if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher 1.3.0
 
 </details>
