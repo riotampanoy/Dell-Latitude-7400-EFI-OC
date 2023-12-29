@@ -409,6 +409,66 @@
 				<key>TableSignature</key>
 				<data></data>
 			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Rename LID _LID to XLID</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X0xJRAA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>WExJRAA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Rename BTNV to XTNV</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>QlROVgI=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>WFROVgI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -436,30 +496,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>Comment</key>
-				<string>Reroute HW_BID to OC_BID</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>SABXAF8AQgBJAEQA</data>
-				<key>Identifier</key>
-				<string>Apple</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>TwBDAF8AQgBJAEQA</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>Comment</key>
 				<string>Skip Board ID check</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -475,6 +511,30 @@
 				<data></data>
 				<key>Replace</key>
 				<data>AC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAu</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Comment</key>
+				<string>Reroute HW_BID to OC_BID</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SABXAF8AQgBJAEQA</data>
+				<key>Identifier</key>
+				<string>Apple</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>Replace</key>
+				<data>TwBDAF8AQgBJAEQA</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -555,7 +615,9 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>acpi-wake-type</key>
-				<data>AwAAAA==</data>
+				<data>AQ==</data>
+				<key>built-in</key>
+				<data>AA==</data>
 				<key>device-id</key>
 				<data>7Z0AAA==</data>
 				<key>device_type</key>
@@ -657,6 +719,8 @@
 				<string>Intel Cannon Point-LP PCH - PCI Express Root Port #12</string>
 				<key>name</key>
 				<string>Intel PCI Express Root Port</string>
+				<key>pci-aspm-default</key>
+				<data>AgAAAA==</data>
 				<key>subsystem-id</key>
 				<data>cHIAAA==</data>
 				<key>subsystem-vendor-id</key>
@@ -740,6 +804,8 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
 				<key>#framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>#framebuffer-stolenmem</key>
@@ -869,6 +935,42 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>AMFIPass.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AMFIPass</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IOSkywalkFamily.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IOSkywalkFamily</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -905,17 +1007,35 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AMFIPass.kext</string>
+				<string>IO80211FamilyLegacy.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AMFIPass</string>
+				<string>Contents/MacOS/IO80211FamilyLegacy</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext</string>
+				<key>Comment</key>
 				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirPortBrcmNIC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1114,60 +1234,6 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IOSkywalkFamily.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IOSkywalkFamily</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>23.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IO80211FamilyLegacy.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IO80211FamilyLegacy</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>23.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirPortBrcmNIC</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>23.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -2108,8 +2174,6 @@
 				<string>sbvmm</string>
 				<key>rtc-blacklist</key>
 				<data></data>
-				<key>OCLP-Settings</key>
-				<string>-allow_fv -allow_amfi</string>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
@@ -2120,7 +2184,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v -amfipassbeta -brcmfxbeta amfi=0x80 agdpmod=vit9696</string>
+				<string>amfi=0x80 ipc_control_port_options agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
@@ -2191,9 +2255,9 @@
 			<key>ARTFrequency</key>
 			<integer>0</integer>
 			<key>BoardProduct</key>
-			<string>Mac-E7203C0F68AA0004</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>BoardRevision</key>
-			<data>Aw==</data>
+			<data>AQ==</data>
 			<key>DevicePathsSupported</key>
 			<integer>0</integer>
 			<key>FSBFrequency</key>
@@ -2205,17 +2269,17 @@
 			<key>SmcBranch</key>
 			<data></data>
 			<key>SmcPlatform</key>
-			<data>ajIyMwAAAAA=</data>
+			<data>ajEzMgAAAAA=</data>
 			<key>SmcRevision</key>
 			<data></data>
 			<key>StartupPowerEvents</key>
 			<integer>0</integer>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DN0R6P3XY</string>
+			<string>C02W80NFJHCC</string>
 			<key>SystemUUID</key>
-			<string>106C1588-737B-4659-BB88-7FD2DC5A3C58</string>
+			<string>84421C32-0BE0-4BA0-9BF8-534F0F401A1D</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -2224,7 +2288,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02045401GU0000FB</string>
+			<string>C02807306CDJH4RCB</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -2234,11 +2298,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DN0R6P3XY</string>
+			<string>C02W80NFJHCC</string>
 			<key>SystemUUID</key>
-			<string>106C1588-737B-4659-BB88-7FD2DC5A3C58</string>
+			<string>84421C32-0BE0-4BA0-9BF8-534F0F401A1D</string>
 		</dict>
 		<key>Memory</key>
 		<dict>
@@ -2299,19 +2363,19 @@
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>Mac-E7203C0F68AA0004</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>FirmwareFeatures</key>
-			<data>ZvCv/QgAAAA=</data>
+			<data>JvSP/QgAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f////wgAAAA=</data>
+			<data>P/+f/wgAAAA=</data>
 			<key>MLB</key>
-			<string>C02045401GU0000FB</string>
+			<string>C02807306CDJH4RCB</string>
 			<key>ROM</key>
 			<data>0OFAlaRY</data>
 			<key>SystemSerialNumber</key>
-			<string>C02DN0R6P3XY</string>
+			<string>C02W80NFJHCC</string>
 			<key>SystemUUID</key>
-			<string>106C1588-737B-4659-BB88-7FD2DC5A3C58</string>
+			<string>84421C32-0BE0-4BA0-9BF8-534F0F401A1D</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -2328,27 +2392,27 @@
 			<key>BoardManufacturer</key>
 			<string>Apple Inc.</string>
 			<key>BoardProduct</key>
-			<string>Mac-E7203C0F68AA0004</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>BoardSerialNumber</key>
-			<string>C02045401GU0000FB</string>
+			<string>C02807306CDJH4RCB</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro15,2</string>
 			<key>ChassisAssetTag</key>
 			<string>Asset Tag#</string>
 			<key>ChassisManufacturer</key>
 			<string>Apple Inc.</string>
 			<key>ChassisSerialNumber</key>
-			<string>C02DN0R6P3XY</string>
+			<string>C02W80NFJHCC</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-E7203C0F68AA0004</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>FirmwareFeatures</key>
-			<data>ZvCv/QgAAAA=</data>
+			<data>JvSP/QgAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f////wgAAAA=</data>
+			<data>P/+f/wgAAAA=</data>
 			<key>PlatformFeature</key>
 			<integer>50</integer>
 			<key>ProcessorType</key>
@@ -2360,13 +2424,13 @@
 			<key>SystemManufacturer</key>
 			<string>Apple Inc.</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DN0R6P3XY</string>
+			<string>C02W80NFJHCC</string>
 			<key>SystemUUID</key>
-			<string>106C1588-737B-4659-BB88-7FD2DC5A3C58</string>
+			<string>84421C32-0BE0-4BA0-9BF8-534F0F401A1D</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
