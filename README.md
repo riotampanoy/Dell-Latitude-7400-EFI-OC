@@ -14,7 +14,9 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - Use Latest Bios 1.28.0</br>
 - Improve Backlight Smoother</br>
 - Latest OpenCore 0.9.8</br>
-- Support macOS Ventura 13.x for Sonoma change "enable-backlight-registers-fix" on Device Properties IGPU to "enable-backlight-registers-alternative-fix"</br>
+- Support macOS Ventura 13.x for Sonoma 14.x</br>
+- if use default Intel WiFi card use AirPortIwlm kext</br>
+- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher 1.3.0
 
 </details>
 
@@ -28,9 +30,9 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 | Graphics           | Intel UHD Graphics 620                                            |
 | Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
 | Display            | 14" FHD 1920x1080 LCD                                             |
-| Storage NVME       | Samsung EVO 970 Plus NVMe 500GB (SetApfsTrimTimeout=0)            |
-| Storage NVME       | WD SN520 250GB NVMe 2242 on WWAN Slot (Windows 10)                |
-| WLAN + Bluetooth   | Intel Wireless AC 9560                                            |
+| Slot PCIE x4 NVME  | Crucial P5 Plus 1TB NVMe 2280 (macOS)                             |
+| Slot PCIE x2 WWAN  | WD SN520 250GB NVMe 2242 (Windows 10)                |
+| WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel 9560 WiFi Card)         |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
 | Camera             | HD Webcam                                                         |
 | Soundcard          | Realtek ALC295                                                    |
@@ -47,14 +49,13 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] All USB ports
 - [x] Thunderbolt Ports
 - [x] Internal Camera
-- [x] WiFi+Bluetooth
+- [x] WiFi+Bluetooth (Airdrop, Handoff and Continuity)
 - [x] Shutdown/ Reboot/ Sleep/ Wake 
 - [x] Speakers and Headphones Jack (Use ALCPlugFix)
 - [x] App Store
 - [x] iMessage and Facetime 
 - [x] HDMI Output + Audio
 - [x] Keyboard and Trackpad (multi gesture trackpad)
-- [x] Airdrop , Handoff , Sidecar 
 - [x] VT-D enable on bios with uncheck disableiomapper kernel quirk
 - [x] Undervolting with Voltageshift to decrease temp
 - [x] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
