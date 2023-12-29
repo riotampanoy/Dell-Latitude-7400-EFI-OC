@@ -56,7 +56,6 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 - [x] iMessage and Facetime 
 - [x] HDMI Output + Audio
 - [x] Keyboard and Trackpad (multi gesture trackpad)
-- [x] Airdrop , Handoff , Sidecar 
 - [x] VT-D enable on bios with uncheck disableiomapper kernel quirk
 - [x] Undervolting with Voltageshift to decrease temp
 - [x] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
