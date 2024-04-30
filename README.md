@@ -13,15 +13,15 @@ cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
 ./voltageshift offset -85 -35 -85</br>
 sudo ./voltageshift buildlaunchd -85 -35 -85 0 0 0 60</br>
-</br></br>
+</br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
 ./voltageshift removelaunchd</br>
-</br></br>
+</br>
 Install ALC295PlugFix for Fix Jack </br>
 cd /*Path to Folder ALC295PlugFix*/</br>
 sudo ./install.sh</br>
-</br></br>
+</br>
 <details>  
 <summary><strong>Overview</strong></summary>
 </br>
