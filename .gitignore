@@ -1,8 +1,12 @@
 
 EFI/.DS_Store
+EFI/BOOT/.DS_Store
 EFI/OC/.DS_Store
+EFI/OC/ACPI/.DS_Store
+EFI/OC/Drivers/.DS_Store
 EFI/OC/Kexts/.DS_Store
+EFI/OC/Resources/.DS_Store
+EFI/OC/Tools/.DS_Store
 voltageshift/.DS_Store
-EFI/.DS_Store
-EFI/OC/.DS_Store
-/voltageshift
+ALC295PlugFix/.DS_Store
+.DS_Store
