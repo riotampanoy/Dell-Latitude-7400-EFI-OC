@@ -7,7 +7,7 @@ Before boot to Install macOS, update your Bios to version 1.30.0 and mod UEFI va
 | DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
 | Disable CFG Lock               | setup_var 0x6ED 0x0 |
 | Disable Overclocking Lock      | setup_var 0x789 0x0 |
-</br>
+
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
