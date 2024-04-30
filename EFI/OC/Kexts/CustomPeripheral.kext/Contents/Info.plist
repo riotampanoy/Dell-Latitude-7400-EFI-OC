@@ -18,6 +18,50 @@
 	<string>8.8.8</string>
 	<key>IOKitPersonalities</key>
 	<dict>
+		<key>#Fake Asix AX88178</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<key>IOClass</key>
+			<string>AppleUSBHostMergeProperties</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostInterface</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>bConfigurationValue</key>
+				<integer>1</integer>
+				<key>bInterfaceNumber</key>
+				<integer>0</integer>
+				<key>idProduct</key>
+				<integer>6016</integer>
+				<key>idVendor</key>
+				<integer>2965</integer>
+			</dict>
+			<key>idProduct</key>
+			<integer>33106</integer>
+			<key>idVendor</key>
+			<integer>3034</integer>
+		</dict>
+		<key>#Fake Asix AX88178 Device</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<key>IOClass</key>
+			<string>AppleUSBHostMergeProperties</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>idProduct</key>
+				<integer>6016</integer>
+				<key>idVendor</key>
+				<integer>2965</integer>
+			</dict>
+			<key>idProduct</key>
+			<integer>33106</integer>
+			<key>idVendor</key>
+			<integer>3034</integer>
+		</dict>
 		<key>AnySDCardReaderAnySBC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -100,9 +144,9 @@
 		<key>Fake Apple Card Reader Device</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
+			<string>AppleUSBHostMergeProperties</string>
 			<key>IOProviderClass</key>
 			<string>IOUSBDevice</string>
 			<key>IOProviderMergeProperties</key>
@@ -130,9 +174,9 @@
 		<key>Fake Apple Card Reader Interface</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
+			<string>AppleUSBHostMergeProperties</string>
 			<key>IOProviderClass</key>
 			<string>IOUSBInterface</string>
 			<key>IOProviderMergeProperties</key>
@@ -156,9 +200,9 @@
 		<key>Fake Apple Card Reader SBC Inject</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
+			<string>AppleUSBHostMergeProperties</string>
 			<key>IOProviderClass</key>
 			<string>com_apple_driver_AppleUSBCardReaderSBC</string>
 			<key>IOProviderMergeProperties</key>
@@ -178,9 +222,9 @@
 		<key>Fake Apple Card Reader SCSI Inject</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
+			<string>AppleUSBHostMergeProperties</string>
 			<key>IOProviderClass</key>
 			<string>IOSCSIPeripheralDeviceNub</string>
 			<key>IOProviderMergeProperties</key>
@@ -202,9 +246,9 @@
 		<key>Fake Apple Card Reader UMC Inject</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
+			<string>AppleUSBHostMergeProperties</string>
 			<key>IOProviderClass</key>
 			<string>com_apple_driver_AppleUSBCardReaderUMC</string>
 			<key>IOProviderMergeProperties</key>
@@ -764,14 +808,16 @@
 			<string>IOUSBDevice</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>USB Interface Name</key>
+				<string>FaceTime Camera (Built-in)</string>
 				<key>USB Product Name</key>
 				<string>FaceTime Camera (Built-in)</string>
 				<key>USB Serial Number</key>
-				<string>CC2938604JFHNW169</string>
+				<string>CC29146B0EGJ3Y32R</string>
 				<key>USB Vendor Name</key>
 				<string>Apple Inc.</string>
 				<key>bcdDevice</key>
-				<integer>32805</integer>
+				<integer>513</integer>
 				<key>iManufacturer</key>
 				<integer>1</integer>
 				<key>iProduct</key>
@@ -784,6 +830,8 @@
 				<integer>1452</integer>
 				<key>kSuspendPort</key>
 				<true/>
+				<key>kUSBCurrentConfiguration</key>
+				<string>1</string>
 				<key>kUSBDescriptorOverride</key>
 				<dict>
 					<key>descriptor</key>
@@ -796,13 +844,23 @@
 					<key>languageID</key>
 					<integer>1033</integer>
 				</dict>
+				<key>kUSBString</key>
+				<string>FaceTime Camera (Built-in)</string>
 				<key>non-removable</key>
 				<string>yes</string>
 			</dict>
+			<key>USB Interface Name</key>
+			<string>FaceTime Camera (Built-in)</string>
+			<key>USB Product Name</key>
+			<string>FaceTime Camera (Built-in)</string>
+			<key>USB Vendor Name</key>
+			<string>Apple Inc.</string>
 			<key>idProduct</key>
 			<integer>21809</integer>
 			<key>idVendor</key>
 			<integer>3034</integer>
+			<key>kUSBString</key>
+			<string>FaceTime Camera (Built-in)</string>
 		</dict>
 		<key>Fake Built-in FaceTime HD Camera Interface A</key>
 		<dict>
@@ -816,12 +874,16 @@
 			<dict>
 				<key>USB Interface Name</key>
 				<string>FaceTime Camera (Built-in)</string>
+				<key>USB Product Name</key>
+				<string>FaceTime Camera (Built-in)</string>
 				<key>bcdDevice</key>
-				<integer>32805</integer>
+				<integer>513</integer>
 				<key>idProduct</key>
 				<integer>34068</integer>
 				<key>idVendor</key>
 				<integer>1452</integer>
+				<key>kUSBCurrentConfiguration</key>
+				<string>1</string>
 				<key>kUSBDescriptorOverride</key>
 				<dict>
 					<key>descriptor</key>
@@ -837,6 +899,12 @@
 				<key>kUSBString</key>
 				<string>FaceTime Camera (Built-in)</string>
 			</dict>
+			<key>USB Interface Name</key>
+			<string>FaceTime Camera (Built-in)</string>
+			<key>USB Product Name</key>
+			<string>FaceTime Camera (Built-in)</string>
+			<key>USB Vendor Name</key>
+			<string>Apple Inc.</string>
 			<key>bConfigurationValue</key>
 			<string>*</string>
 			<key>bInterfaceNumber</key>
@@ -845,6 +913,8 @@
 			<integer>21809</integer>
 			<key>idVendor</key>
 			<integer>3034</integer>
+			<key>kUSBString</key>
+			<string>FaceTime Camera (Built-in)</string>
 		</dict>
 		<key>Fake Built-in FaceTime HD Camera Interface B</key>
 		<dict>
@@ -858,12 +928,16 @@
 			<dict>
 				<key>USB Interface Name</key>
 				<string>FaceTime Camera (Built-in)</string>
+				<key>USB Product Name</key>
+				<string>FaceTime Camera (Built-in)</string>
 				<key>bcdDevice</key>
-				<integer>32805</integer>
+				<integer>513</integer>
 				<key>idProduct</key>
 				<integer>34068</integer>
 				<key>idVendor</key>
 				<integer>1452</integer>
+				<key>kUSBCurrentConfiguration</key>
+				<string>1</string>
 				<key>kUSBDescriptorOverride</key>
 				<dict>
 					<key>descriptor</key>
@@ -879,6 +953,12 @@
 				<key>kUSBString</key>
 				<string>FaceTime Camera (Built-in)</string>
 			</dict>
+			<key>USB Interface Name</key>
+			<string>FaceTime Camera (Built-in)</string>
+			<key>USB Product Name</key>
+			<string>FaceTime Camera (Built-in)</string>
+			<key>USB Vendor Name</key>
+			<string>Apple Inc.</string>
 			<key>bConfigurationValue</key>
 			<string>*</string>
 			<key>bInterfaceNumber</key>
@@ -887,6 +967,8 @@
 			<integer>21809</integer>
 			<key>idVendor</key>
 			<integer>3034</integer>
+			<key>kUSBString</key>
+			<string>FaceTime Camera (Built-in)</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>

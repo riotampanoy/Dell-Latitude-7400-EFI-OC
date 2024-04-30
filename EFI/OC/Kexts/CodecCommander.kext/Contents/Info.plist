@@ -76,6 +76,8 @@
 				<string>Realtek ALC283,etc</string>
 				<key>10ec_0292</key>
 				<string>Realtek ALC292</string>
+				<key>10ec_0295</key>
+				<string>Realtek ALC295</string>
 				<key>10ec_0668</key>
 				<string>Realtek ALC668</string>
 				<key>10ec_0892_HDA_1458</key>
@@ -456,17 +458,17 @@
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IOACPIFamily</key>
-		<string>1.0d1</string>
-		<key>com.apple.iokit.IOAudioFamily</key>
-		<string>1.1</string>
+		<string>1.0.0d1</string>
+		<key>com.apple.iokit.IOHDAFamily</key>
+		<string>265.88</string>
 		<key>com.apple.iokit.IOPCIFamily</key>
-		<string>1.0.0b1</string>
+		<string>1.1</string>
 		<key>com.apple.kpi.bsd</key>
-		<string>9.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>9.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>9.0.0</string>
+		<string>8.0.0</string>
 	</dict>
 	<key>Source Code</key>
 	<string>https://github.com/RehabMan/EAPD-Codec-Commander</string>

@@ -116,7 +116,7 @@
 			<key>model</key>
 			<string>MacBookPro15,2</string>
 		</dict>
-		<key>MacBookPro15,2-XHC2</key>
+		<key>MacBookPro15,2-XHC3</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -142,7 +142,7 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>HS01</key>
+					<key>HSP1</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -151,7 +151,7 @@
 						AQAAAA==
 						</data>
 					</dict>
-					<key>HS02</key>
+					<key>HSP2</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -160,16 +160,16 @@
 						AgAAAA==
 						</data>
 					</dict>
-					<key>SS01</key>
+					<key>SSP1</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
 						<data>
-						AwAAAA==
+						DgAAAA==
 						</data>
 					</dict>
-					<key>SS02</key>
+					<key>SSP2</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -275,9 +275,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro15,2</string>
 		</dict>
-		<key>MacBookPro16,3-XHC2</key>
+		<key>MacBookPro16,3-XHC3</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -303,7 +303,7 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>HS01</key>
+					<key>HSP1</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -312,7 +312,7 @@
 						AQAAAA==
 						</data>
 					</dict>
-					<key>HS02</key>
+					<key>HSP2</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -321,16 +321,16 @@
 						AgAAAA==
 						</data>
 					</dict>
-					<key>SS01</key>
+					<key>SSP1</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
 						<data>
-						AwAAAA==
+						DgAAAA==
 						</data>
 					</dict>
-					<key>SS02</key>
+					<key>SSP2</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
@@ -342,7 +342,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro15,2</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
