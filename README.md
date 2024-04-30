@@ -51,7 +51,7 @@ sudo ./install.sh</br>
 | Camera             | HD Webcam                                                         |
 | Soundcard          | Realtek ALC295                                                    |
 | Trackpad           | Dell I2C Touchpad                                                 |
-| Thunderbolt        | Intel JHL6240 Alpine Ridge Thunderbolt 3                          |
+| Thunderbolt        | Intel JHL6340 Alpine Ridge Thunderbolt 3                          |
 
 
 </details>
