@@ -7,21 +7,21 @@ Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI va
 | DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
 | Disable CFG Lock               | setup_var 0x6ED 0x0 |
 | Disable Overclocking Lock      | setup_var 0x789 0x0 |
-
-Voltage Shift
-cd /*Path to Folder VoltageShift*/
-sudo chown -R root:wheel VoltageShift.kext
-./voltageshift offset -85 -35 -85
-sudo ./voltageshift buildlaunchd -85 -35 -85 0 0 0 60
-
-Remove VoltageShift Launchd
-cd /*Path to Folder VoltageShift*/
-./voltageshift removelaunchd
-
-Install ALC295PlugFix for Fix Jack 
-cd /*Path to Folder ALC295PlugFix*/
-sudo ./install.sh
-
+</br>
+Voltage Shift</br>
+cd /*Path to Folder VoltageShift*/</br>
+sudo chown -R root:wheel VoltageShift.kext</br>
+./voltageshift offset -85 -35 -85</br>
+sudo ./voltageshift buildlaunchd -85 -35 -85 0 0 0 60</br>
+</br></br>
+Remove VoltageShift Launchd</br>
+cd /*Path to Folder VoltageShift*/</br>
+./voltageshift removelaunchd</br>
+</br></br>
+Install ALC295PlugFix for Fix Jack </br>
+cd /*Path to Folder ALC295PlugFix*/</br>
+sudo ./install.sh</br>
+</br></br>
 <details>  
 <summary><strong>Overview</strong></summary>
 </br>
