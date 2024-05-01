@@ -76,9 +76,6 @@ sudo ./install.sh</br>
       
 </details>
 
-Don't complain everything you take here!!
-
-
 <details>
 <img src="https://github.com/riotampanoy/Dell-Latitude-7400/blob/main/Screenshot/Screenshot%202023-12-17%20at%2001.28.11.png?raw=true"/></br>
 <img src="https://github.com/riotampanoy/Dell-Latitude-7400/blob/main/Screenshot/Screenshot%202023-12-17%20at%2001.28.32.png?raw=true"/></br>
