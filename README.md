@@ -1,27 +1,27 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Before boot to Install macOS, update your Bios to version 1.28.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+Before boot to Install macOS, update your Bios to version 1.30.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
 | DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
 | Disable CFG Lock               | setup_var 0x6ED 0x0 |
 | Disable Overclocking Lock      | setup_var 0x789 0x0 |
-</br>
+
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
 ./voltageshift offset -85 -35 -85</br>
 sudo ./voltageshift buildlaunchd -85 -35 -85 0 0 0 60</br>
-</br></br>
+</br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
 ./voltageshift removelaunchd</br>
-</br></br>
+</br>
 Install ALC295PlugFix for Fix Jack </br>
 cd /*Path to Folder ALC295PlugFix*/</br>
 sudo ./install.sh</br>
-</br></br>
+</br>
 <details>  
 <summary><strong>Overview</strong></summary>
 </br>
@@ -75,9 +75,6 @@ sudo ./install.sh</br>
 - [x] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
       
 </details>
-
-Don't complain everything you take here!!
-
 
 <details>
 <img src="https://github.com/riotampanoy/Dell-Latitude-7400/blob/main/Screenshot/Screenshot%202023-12-17%20at%2001.28.11.png?raw=true"/></br>
