@@ -1,0 +1,9 @@
+systemextensionsctl developer on
+
+sudo chown -R root:wheel VoltageShift.kext
+./voltageshift info
+./voltageshift mon
+
+./voltageshift offset -65 -35 -65
+sudo ./voltageshift buildlaunchd -65 -35 -65 0 0 0 60
+./voltageshift removelaunchd
