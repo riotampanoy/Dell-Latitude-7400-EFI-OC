@@ -63,7 +63,7 @@ sudo ./install.sh</br>
 - [x] All USB ports
 - [x] Thunderbolt Ports
 - [x] Internal Camera
-- [x] WiFi+Bluetooth (Airdrop, Handoff and Continuity)
+- [x] WiFi+Bluetooth (Airdrop, Handoff and Continuity Broadcom Cards Only)
 - [x] Shutdown/ Reboot/ Sleep/ Wake 
 - [x] Speakers and Headphones Jack (Use ALCPlugFix)
 - [x] App Store
@@ -72,7 +72,6 @@ sudo ./install.sh</br>
 - [x] Keyboard and Trackpad (multi gesture trackpad)
 - [x] VT-D enable on bios with uncheck disableiomapper kernel quirk
 - [x] Undervolting with Voltageshift to decrease temp
-- [x] Some PCI Bridge, XHCI, SMBus, Thunderbolt etc use fake id & fake subsystem from MacBookPro 15,2 (Cosmetic Only)
       
 </details>
 
