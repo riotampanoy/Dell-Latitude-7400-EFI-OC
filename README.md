@@ -1,6 +1,6 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Before boot to Install macOS, update your Bios to version 1.30.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+Before boot to Install macOS, update your Bios to version 1.38.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
