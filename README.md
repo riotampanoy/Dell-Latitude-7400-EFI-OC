@@ -49,8 +49,8 @@ sudo ./install.sh</br>
 | Graphics           | Intel UHD Graphics 620                                            |
 | Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
 | Display            | 14" FHD 1920x1080 LCD                                             |
-| Slot PCIE x4 NVME  | Crucial P5 Plus 1TB NVMe 2280 (macOS)                             |
-| Slot PCIE x2 WWAN  | WD SN520 250GB NVMe 2242 (Windows 10)                |
+| Slot PCIE x4 NVME  | WD SN740 500GB NVMe 2280 (macOS)                                  |
+| Slot PCIE x2 WWAN  | WDC SN 520 250GB NVMe 2242 (Windows 10)                           |
 | WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel 9560 WiFi Card)         |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
 | Camera             | HD Webcam                                                         |
