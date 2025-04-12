@@ -45,9 +45,9 @@ sudo ./install.sh</br>
 
 | Model              | Dell Latitude 7400                                                |
 |:-------------------|:------------------------------------------------------------------|
-| Processor          | Intel Core i7-8665U                                               |
-| Graphics           | Intel UHD Graphics 620                                            |
-| Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
+| Processor          | Intel® Core™ i7-8665U                                             |
+| Graphics           | Intel® UHD Graphics 620                                           |
+| Memory             | 32GB (2x16GB 2666MHz DDR4 Corsair Vengeance)                      |
 | Display            | 14" FHD 1920x1080 LCD                                             |
 | Slot PCIE x4 NVME  | WD SN740 500GB NVMe 2280 (macOS)                                  |
 | Slot PCIE x2 WWAN  | WDC SN 520 250GB NVMe 2242 (Windows 10)                           |
