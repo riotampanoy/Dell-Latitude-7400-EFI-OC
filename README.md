@@ -6,15 +6,18 @@ Before boot to Install macOS, update your Bios to version 1.30.0 and mod UEFI va
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
 | DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
 | Disable CFG Lock               | setup_var 0x6ED 0x0 |
-| Disable Overclocking Lock      | setup_var 0x789 0x0 |
 | Enable Overclocking Feature    | setup_var 0x855 0x1 |
+| Disable Overclocking Lock      | setup_var 0x789 0x0 |
 | Enable Voltage Optimization    | setup_var 0x878 0x1 |
+| Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
+| DisableThunderbolt"  Auto Switch| setup_var 0x158B 0x0|
 
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
-./voltageshift offset -85 -35 -85</br>
-sudo ./voltageshift buildlaunchd -85 -35 -85 0 0 0 60</br>
+./voltageshift offset -110 0 -110</br>
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)</br>
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)</br>
 </br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
