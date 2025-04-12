@@ -30,12 +30,12 @@ sudo ./install.sh</br>
 <details>  
 <summary><strong>Overview</strong></summary>
 </br>
-- Use Latest Bios 1.28.0</br>
+- Use Latest Bios 1.38.0</br>
 - Improve Backlight Smoother</br>
-- Latest OpenCore 0.9.8</br>
-- Support macOS Ventura 13.x for Sonoma 14.x</br>
+- Latest OpenCore 1.0.5</br>
+- Support macOS Ventura 13.x for Sequoia 14.x</br>
 - if use default Intel WiFi card use AirPortIwlm kext</br>
-- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher 1.3.0
+- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher
 
 </details>
 
