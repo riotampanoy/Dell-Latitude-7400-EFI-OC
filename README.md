@@ -1,20 +1,23 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Before boot to Install macOS, update your Bios to version 1.30.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+Before boot to Install macOS, update your Bios to version 1.38.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
 | DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
 | Disable CFG Lock               | setup_var 0x6ED 0x0 |
-| Disable Overclocking Lock      | setup_var 0x789 0x0 |
 | Enable Overclocking Feature    | setup_var 0x855 0x1 |
+| Disable Overclocking Lock      | setup_var 0x789 0x0 |
 | Enable Voltage Optimization    | setup_var 0x878 0x1 |
+| Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
+| DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
 
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
-./voltageshift offset -85 -35 -85</br>
-sudo ./voltageshift buildlaunchd -85 -35 -85 0 0 0 60</br>
+./voltageshift offset -110 0 -110</br>
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)</br>
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)</br>
 </br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
@@ -27,12 +30,12 @@ sudo ./install.sh</br>
 <details>  
 <summary><strong>Overview</strong></summary>
 </br>
-- Use Latest Bios 1.28.0</br>
+- Use Latest Bios 1.38.0</br>
 - Improve Backlight Smoother</br>
-- Latest OpenCore 0.9.8</br>
-- Support macOS Ventura 13.x for Sonoma 14.x</br>
+- Latest OpenCore 1.0.5</br>
+- Support macOS Ventura 13.x for Sequoia 14.x</br>
 - if use default Intel WiFi card use AirPortIwlm kext</br>
-- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher 1.3.0
+- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher
 
 </details>
 
@@ -42,12 +45,12 @@ sudo ./install.sh</br>
 
 | Model              | Dell Latitude 7400                                                |
 |:-------------------|:------------------------------------------------------------------|
-| Processor          | Intel Core i7-8665U                                               |
-| Graphics           | Intel UHD Graphics 620                                            |
-| Memory             | 16GB (2x8GB 2666MHz DDR4 Corsair Vengeance)                       |
+| Processor          | Intel® Core™ i7-8665U                                             |
+| Graphics           | Intel® UHD Graphics 620                                           |
+| Memory             | 32GB (2x16GB 2666MHz DDR4 Corsair Vengeance)                      |
 | Display            | 14" FHD 1920x1080 LCD                                             |
-| Slot PCIE x4 NVME  | Crucial P5 Plus 1TB NVMe 2280 (macOS)                             |
-| Slot PCIE x2 WWAN  | WD SN520 250GB NVMe 2242 (Windows 10)                |
+| Slot PCIE x4 NVME  | WD SN740 500GB NVMe 2280 (macOS)                                  |
+| Slot PCIE x2 WWAN  | WDC SN 520 250GB NVMe 2242 (Windows 10)                           |
 | WLAN + Bluetooth   | Broadcom BCM94360CS2 (Replaced from Intel 9560 WiFi Card)         |
 | Card Reader        | Realtek RTS525A PCIE Card Reader                                  |
 | Camera             | HD Webcam                                                         |
