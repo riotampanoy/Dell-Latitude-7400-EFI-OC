@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>22G436</string>
+	<string>22H420</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -67,24 +67,24 @@
 		</dict>
 		<key>IOElectrifyBridge</key>
 		<dict>
-			<key>CFBundleIdentifier</key>
+			<key>#CFBundleIdentifier</key>
 			<string>org.darkvoid.driver.IOElectrify</string>
-			<key>IOClass</key>
+			<key>#IOClass</key>
 			<string>IOElectrifyBridge</string>
-			<key>IOMatchCategory</key>
+			<key>#IOMatchCategory</key>
 			<string>IOElectrify</string>
-			<key>IOPCIClassMatch</key>
+			<key>#IOPCIClassMatch</key>
 			<string>0x06040000&amp;0xffff0000</string>
-			<key>IOPCIPrimaryMatch</key>
-			<string>0xDA158086</string>
-			<key>IOProbeScore</key>
+			<key>#IOPCIPrimaryMatch</key>
+			<string>0x76158086</string>
+			<key>#IOProbeScore</key>
 			<integer>10</integer>
-			<key>IOProviderClass</key>
+			<key>#IOProviderClass</key>
 			<string>IOPCI2PCIBridge</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>13.3</string>
+	<string>13.5</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>1.0.0</string>
 	<key>OSBundleLibraries</key>
