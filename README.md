@@ -10,7 +10,7 @@ Before boot to Install macOS, update your Bios to version 1.30.0 and mod UEFI va
 | Disable Overclocking Lock      | setup_var 0x789 0x0 |
 | Enable Voltage Optimization    | setup_var 0x878 0x1 |
 | Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
-| DisableThunderbolt"  Auto Switch| setup_var 0x158B 0x0|
+| DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
 
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
