@@ -1,5 +1,5 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
-for Laptop installed Intel WiFi, rename config-Intel WiFi.plist to config.plist and rename #IOName on PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) to IOName if installed Sequoia<br>
+for Laptop installed Intel WiFi, rename config-Intel WiFi.plist to config.plist and rename #IOName on PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) to IOName if installed Sequoia<br><br>
 for Laptop replaced to Broadcom BCM94360CS2/BCM943602CS WiFi, rename config-Broadcom WiFi.plist to config.plist<br>
 
 Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for Support Thunderbolt on macOS and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
