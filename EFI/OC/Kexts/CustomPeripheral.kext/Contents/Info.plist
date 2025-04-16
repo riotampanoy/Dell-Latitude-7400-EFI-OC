@@ -18,6 +18,39 @@
 	<string>8.8.8</string>
 	<key>IOKitPersonalities</key>
 	<dict>
+		<key>AGPM</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AGPM</string>
+			<key>IOClass</key>
+			<string>AGPMController</string>
+			<key>IONameMatch</key>
+			<string>AGPMEnabler</string>
+			<key>IOProviderClass</key>
+			<string>IOPlatformPluginDevice</string>
+			<key>Machines</key>
+			<dict>
+				<key>MacBookPro15,2</key>
+				<dict>
+					<key>Vendor8086Device3EA5</key>
+					<dict>
+						<key>AGDCEnabled</key>
+						<integer>1</integer>
+						<key>Heuristic</key>
+						<dict>
+							<key>ID</key>
+							<integer>-1</integer>
+						</dict>
+						<key>control-id</key>
+						<integer>17</integer>
+						<key>max-power-state</key>
+						<integer>15</integer>
+						<key>min-power-state</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
 		<key>FaceTime HD Camera (Built-in) @0</key>
 		<dict>
 			<key>CFBundleIdentifier</key>

@@ -144,7 +144,7 @@
 			<key>model</key>
 			<string>MacBookPro15,2</string>
 		</dict>
-		<key>MacBookPro15,2-XHC5</key>
+		<key>MacBookPro15,2-XHC3</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
