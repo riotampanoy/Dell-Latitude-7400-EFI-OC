@@ -7,7 +7,7 @@ Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt
 |Intel WiFi Users|- rename config-Intel WiFi.plist to config.plist<br>- rename #IOName to IOName on PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) on Device Properties if installed Sequoia|
 |Broadcom BCM94360CS2/BCM943602CS Users| rename config-Broadcom WiFi.plist to config.plist|
 
-<br><br>
+<br>
 
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
