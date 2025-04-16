@@ -39,7 +39,7 @@ sudo ./install.sh</br>
 - Latest OpenCore 1.0.5</br>
 - Support macOS Ventura 13.x for Sequoia 14.x</br>
 - if use default Intel WiFi card use AirPortIwlm kext</br>
-- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher
+- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Sonoma 14.x to Sequoia 15.x Just Root Patch With OpenCore Legacy Patcher
 
 </details>
 
