@@ -1,6 +1,6 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Before boot to Install macOS, update your Bios to version 1.38.0 and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for Support Thunderbolt on macOS and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
@@ -11,6 +11,10 @@ Before boot to Install macOS, update your Bios to version 1.38.0 and mod UEFI va
 | Enable Voltage Optimization    | setup_var 0x878 0x1 |
 | Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
 | DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
+| Enable Thunderbolt Usb Support | setup_var 0x4ED 0x1 |
+| DIMM profile                   | setup_var 0xA4F<br>Default 0x00<br>XMP Profile 1 0x2<br>XMP Profile 2 0x3|
+
+After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
 
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
@@ -35,7 +39,7 @@ sudo ./install.sh</br>
 - Latest OpenCore 1.0.5</br>
 - Support macOS Ventura 13.x for Sequoia 14.x</br>
 - if use default Intel WiFi card use AirPortIwlm kext</br>
-- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Just Root Patch With OpenCore Legacy Patcher
+- if use Broadcom BCM94360CS2 plug n play on Ventura 13.x and Sonoma 14.x to Sequoia 15.x Just Root Patch With OpenCore Legacy Patcher
 
 </details>
 
