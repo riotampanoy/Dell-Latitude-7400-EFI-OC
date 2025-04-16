@@ -4,8 +4,8 @@ Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt
 
 | WiFi Installed                       | Command             | Warning |
 |:-------------------------------------|:--------------------|:--------------------|
-|Intel WiFi |- rename config-Intel WiFi.plist to config.plist|- Disable SecureBootModel on Misc on Sonoma/Sequoia<br>- Rename #IOName to IOName at PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) Device Properties on Sequoia<br>- Root Patch with OCLP if installed Sequoia|
-|Broadcom BCM94360CS2/BCM943602CS |- rename config-Broadcom WiFi.plist to config.plist|- Disable SecureBootModel on Misc on Sonoma/Sequoia<br>- Root Patch with OCLP if Installed Sonoma/Sequoia|
+|Intel WiFi |- rename config-Intel WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Rename #IOName to IOName at PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) Device Properties on Sequoia<br>- Root Patch with OCLP if installed Sequoia|
+|Broadcom BCM94360CS2/BCM943602CS |- rename config-Broadcom WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Root Patch with OCLP if Installed Sonoma/Sequoia|
 
 <br>
 
