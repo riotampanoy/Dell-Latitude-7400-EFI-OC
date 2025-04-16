@@ -1,10 +1,12 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
+
+Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+
 | WiFi Installed                       | Command             |
 |:-------------------------------|:--------------------|
 |Intel WiFi Users|rename config-Intel WiFi.plist to config.plist and rename #IOName on PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) to IOName if installed Sequoia|
 |Broadcom BCM94360CS2/BCM943602CS Users| rename config-Broadcom WiFi.plist to config.plist|
 
-Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for Support Thunderbolt on macOS and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
