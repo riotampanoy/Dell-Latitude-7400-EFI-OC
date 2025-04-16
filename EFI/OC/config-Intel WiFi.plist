@@ -448,30 +448,6 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Comment</key>
-				<string>Reroute HW_BID to OC_BID</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>SABXAF8AQgBJAEQA</data>
-				<key>Identifier</key>
-				<string>Apple</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>TwBDAF8AQgBJAEQA</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Comment</key>
 				<string>Skip Board ID check</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -487,6 +463,30 @@
 				<data></data>
 				<key>Replace</key>
 				<data>AC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAu</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Comment</key>
+				<string>Reroute HW_BID to OC_BID</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SABXAF8AQgBJAEQA</data>
+				<key>Identifier</key>
+				<string>Apple</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>Replace</key>
+				<data>TwBDAF8AQgBJAEQA</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -760,6 +760,10 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
+				<key>IOName</key>
+				<string>pci14e4,43a0</string>
+				<key>compatible</key>
+				<string>pci14e4,43a0</string>
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
@@ -770,10 +774,6 @@
 				<data>AwEAAA==</data>
 				<key>wlan.autocountry.enabled</key>
 				<data>AAAAAA==</data>
-				<key>compatible</key>
-				<string>pci14e4,43a0</string>
-				<key>IOName</key>
-				<string>pci14e4,43a0</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x3)</key>
 			<dict>
@@ -1314,7 +1314,7 @@
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
 				<key>MaxKernel</key>
-				<string>23.9.9</string>
+				<string>23.99.99</string>
 				<key>MinKernel</key>
 				<string>23.4.0</string>
 				<key>PlistPath</key>
