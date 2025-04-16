@@ -1,4 +1,6 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
+| WiFi Installed                       | Command             |
+|:-------------------------------|:--------------------|
 |Intel WiFi Users|rename config-Intel WiFi.plist to config.plist and rename #IOName on PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) to IOName if installed Sequoia|
 |Broadcom BCM94360CS2/BCM943602CS Users| rename config-Broadcom WiFi.plist to config.plist|
 
