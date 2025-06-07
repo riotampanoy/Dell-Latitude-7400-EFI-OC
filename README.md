@@ -1,8 +1,14 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
-for Laptop installed Intel WiFi, rename config-Intel WiFi.plist to config.plist<br>
-for Laptop replaced to Broadcom BCM94360CS2/BCM943602CS WiFi, rename config-Broadcom WiFi.plist to config.plist<br>
 
-Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for Support Thunderbolt on macOS and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)
+Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)<br>
+
+| WiFi                      | Command             | OS Version Command |
+|:-------------------------------------|:--------------------|:--------------------|
+|Intel WiFi |- rename config-Intel WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Rename #IOName to IOName at PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) Device Properties on Sequoia<br>- Root Patch with OCLP if installed Sequoia|
+|Broadcom WiFi |- rename config-Broadcom WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Root Patch with OCLP if Installed Sonoma/Sequoia|
+
+<br>
+
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
@@ -14,7 +20,7 @@ Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt
 | Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
 | DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
 | Enable Thunderbolt Usb Support | setup_var 0x4ED 0x1 |
-| DIMM profile                   | setup_var 0xA4F<br>Default 0x00<br>XMP Profile 1 0x2<br>XMP Profile 2 0x3|
+| DIMM profile                   | setup_var 0xA4F<br>- Default 0x00<br>- XMP Profile 1 0x2<br>- XMP Profile 2 0x3|
 
 After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
 
