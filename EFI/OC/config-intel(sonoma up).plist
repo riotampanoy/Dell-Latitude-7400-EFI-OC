@@ -448,13 +448,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Comment</key>
-				<string>Skip Board ID check</string>
+				<string>Patch SkipLogo</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>AFAAbABhAHQAZgBvAHIAbQBTAHUAcABwAG8AcgB0AC4AcABsAGkAcwB0</data>
+				<data>UwBrAGkAcABMAG8AZwBv</data>
 				<key>Identifier</key>
 				<string>Apple</string>
 				<key>Limit</key>
@@ -462,7 +462,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>Replace</key>
-				<data>AC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAu</data>
+				<data>QQBrAGkAcABMAG8AZwBv</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -496,13 +496,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Comment</key>
-				<string>Patch SkipLogo</string>
+				<string>Skip Board ID check</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>UwBrAGkAcABMAG8AZwBv</data>
+				<data>AFAAbABhAHQAZgBvAHIAbQBTAHUAcABwAG8AcgB0AC4AcABsAGkAcwB0</data>
 				<key>Identifier</key>
 				<string>Apple</string>
 				<key>Limit</key>
@@ -510,7 +510,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>Replace</key>
-				<data>QQBrAGkAcABMAG8AZwBv</data>
+				<data>AC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAuAC4ALgAu</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -748,6 +748,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
+				<key>IOName</key>
+				<string>pci14e4,43a0</string>
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
@@ -758,8 +760,6 @@
 				<data>AwEAAA==</data>
 				<key>wlan.autocountry.enabled</key>
 				<data>AAAAAA==</data>
-				<key>IOName</key>
-				<string>pci14e4,43a0</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x3)</key>
 			<dict>
@@ -2336,7 +2336,7 @@
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
-			<true/>
+			<false/>
 			<key>InstanceIdentifier</key>
 			<string></string>
 			<key>LauncherOption</key>
@@ -2480,7 +2480,29 @@
 				<key>Flavour</key>
 				<string>Auto</string>
 				<key>FullNvramAccess</key>
+				<false/>
+				<key>Name</key>
+				<string>modGRUBShell</string>
+				<key>Path</key>
+				<string>modGRUBShell.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
 				<true/>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
