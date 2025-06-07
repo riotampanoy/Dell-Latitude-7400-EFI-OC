@@ -1,5 +1,8 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
+For Ventura lower Set SecureBootModel to Enable
+For Sonoma upper Set SecureBootModel to Disable
+
 Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)<br>
 
 | WiFi                      | Command             | OS Version Command |
