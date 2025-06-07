@@ -4,6 +4,12 @@ sudo chown -R root:wheel VoltageShift.kext
 ./voltageshift info
 ./voltageshift mon
 
-./voltageshift offset -65 -35 -65
-sudo ./voltageshift buildlaunchd -65 -35 -65 0 0 0 60
+Runing
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 10 10 1 60
+
+Set Autorun mau pilih yang turbo enable atau disable
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)
+
+Set Hapus Autorun
 ./voltageshift removelaunchd

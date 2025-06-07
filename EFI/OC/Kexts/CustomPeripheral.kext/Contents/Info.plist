@@ -680,11 +680,11 @@
 			<key>PSM</key>
 			<integer>17</integer>
 			<key>ProductID</key>
-			<integer>50479</integer>
+			<integer>65535</integer>
 			<key>ReportAllBytes</key>
 			<integer>0</integer>
 			<key>VendorID</key>
-			<integer>1133</integer>
+			<integer>1452</integer>
 		</dict>
 		<key>Fake Apple Wireless Mouse Device 2004</key>
 		<dict>
@@ -820,9 +820,9 @@
 			<key>PSM</key>
 			<integer>17</integer>
 			<key>ProductID</key>
-			<integer>50479</integer>
+			<integer>65535</integer>
 			<key>VendorID</key>
-			<integer>1133</integer>
+			<integer>1452</integer>
 		</dict>
 		<key>Fake Apple Wireless Mouse Interface</key>
 		<dict>
@@ -1089,13 +1089,6 @@
 			<dict>
 				<key>DisplayProductName</key>
 				<string>Built-in Display </string>
-				<key>IODisplayEDID</key>
-				<data>
-				AP///////wAw5NoFAAAAAAAcAQSlHxFgBm+xp1VMniUM
-				UFQAAAABAQEBAQEBAQEBAQEBAQEBLjaAoHA4H0AwIDUA
-				Na4QAAAaVyuAoHA4H0AwIDUANa4QAAAaAAAA/QA4TB5T
-				EQAKICAgICAgAAAAAAABQTGeABAAAAoBCiAgADE=
-				</data>
 			</dict>
 		</dict>
 	</dict>

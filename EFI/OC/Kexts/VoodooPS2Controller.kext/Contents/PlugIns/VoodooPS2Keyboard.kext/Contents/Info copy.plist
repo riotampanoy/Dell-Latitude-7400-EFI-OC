@@ -65,35 +65,6 @@
 						</array>
 						<key>Function Keys Special</key>
 						<array>
-							<string>;The following 12 items map Fn+fkeys to Fn+fkeys</string>
-							<string>e020=e020</string>
-							<string>e02e=e02e</string>
-							<string>e030=e030</string>
-							<string>e022=e022</string>
-							<string>;Fn+f5 macro</string>
-							<string>;Fn+f6 macro</string>
-							<string>;Fn+f7 macro</string>
-							<string>;Fn+f8 macro</string>
-							<string>;Fn+f9 macro</string>
-							<string>;Fn+f10 no code</string>
-							<string>e005=e005</string>
-							<string>e006=e006</string>
-							<string>;The following 12 items map fkeys to fkeys</string>
-							<string>3b=3b</string>
-							<string>3c=3c</string>
-							<string>3d=3d</string>
-							<string>3e=3e</string>
-							<string>3f=3f</string>
-							<string>40=40</string>
-							<string>41=41</string>
-							<string>42=42</string>
-							<string>43=43</string>
-							<string>44=44</string>
-							<string>57=57</string>
-							<string>58=58</string>
-						</array>
-						<key>Function Keys Standard</key>
-						<array>
 							<string>;The following 12 items map Fn+fkeys to fkeys</string>
 							<string>e020=3b</string>
 							<string>e02e=3c</string>
@@ -121,6 +92,35 @@
 							<string>57=e005</string>
 							<string>58=e006</string>
 						</array>
+						<key>Function Keys Standard</key>
+						<array>
+							<string>;The following 12 items map Fn+fkeys to Fn+fkeys</string>
+							<string>e020=e020</string>
+							<string>e02e=e02e</string>
+							<string>e030=e030</string>
+							<string>e022=e022</string>
+							<string>;Fn+f5 macro</string>
+							<string>;Fn+f6 macro</string>
+							<string>;Fn+f7 macro</string>
+							<string>;Fn+f8 macro</string>
+							<string>;Fn+f9 macro</string>
+							<string>;Fn+f10 no code</string>
+							<string>e005=e005</string>
+							<string>e006=e006</string>
+							<string>;The following 12 items map fkeys to fkeys</string>
+							<string>3b=3b</string>
+							<string>3c=3c</string>
+							<string>3d=3d</string>
+							<string>3e=3e</string>
+							<string>3f=3f</string>
+							<string>40=40</string>
+							<string>41=41</string>
+							<string>42=42</string>
+							<string>43=43</string>
+							<string>44=44</string>
+							<string>57=57</string>
+							<string>58=58</string>
+						</array>
 					</dict>
 					<key>HSW-LPT</key>
 					<string>Dell-Keys</string>
@@ -131,14 +131,73 @@
 							<string>e005</string>
 							<string>e006</string>
 						</array>
-						<key>Custom ADB Map</key>
-						<array/>
 						<key>Custom PS2 Map</key>
-						<array/>
+						<array>
+							<string>46=0</string>
+							<string>e045=0</string>
+							<string>e037=64</string>
+							<string>40=65</string>
+							<string>41=66</string>
+							<string>44=64</string>
+						</array>
 						<key>Function Keys Special</key>
-						<array/>
+						<array>
+							<string>;The following 12 items map Fn+fkeys to fkeys</string>
+							<string>e020=3b</string>
+							<string>e02e=3c</string>
+							<string>e030=3d</string>
+							<string>;Fn+f4 macro</string>
+							<string>;Fn+f5 macro</string>
+							<string>e005=40</string>
+							<string>e006=41</string>
+							<string>e06e=42</string>
+							<string>;Fn+f9 no code</string>
+							<string>e037=44</string>
+							<string>;Fn+f11 macro</string>
+							<string>;Fn+f12 macro</string>
+							<string>;The following 12 items map fkeys to Fn+fkeys</string>
+							<string>3b=e020</string>
+							<string>3c=e02e</string>
+							<string>3d=e030</string>
+							<string>;Fn+f4 macro</string>
+							<string>;Fn+f5 macro</string>
+							<string>40=e005</string>
+							<string>41=e006</string>
+							<string>42=e06e</string>
+							<string>;Fn+f9 no code</string>
+							<string>44=e037</string>
+							<string>;Fn+f11 macro</string>
+							<string>;Fn+f12 macro</string>
+						</array>
 						<key>Function Keys Standard</key>
-						<array/>
+						<array>
+							<string>;The following 12 items map Fn+fkeys to Fn+fkeys</string>
+							<string>e020=e020</string>
+							<string>e02e=e02e</string>
+							<string>e030=e030</string>
+							<string>;Fn+f4 macro</string>
+							<string>;Fn+f5 macro</string>
+							<string>e005=e005</string>
+							<string>e006=e006</string>
+							<string>e06e=e06e</string>
+							<string>;Fn+f9 macro</string>
+							<string>e037=e037</string>
+							<string>;Fn+f11 macro</string>
+							<string>;Fn+f12 macro</string>
+							<string>;The following 12 items map fkeys to fkeys</string>
+							<string>3b=3b</string>
+							<string>3c=3c</string>
+							<string>3d=3d</string>
+							<string>3e=3e</string>
+							<string>3f=3f</string>
+							<string>40=40</string>
+							<string>41=41</string>
+							<string>42=42</string>
+							<string>43=43</string>
+							<string>44=44</string>
+							<string>57=57</string>
+							<string>58=58</string>
+						</array>
 					</dict>
 					<key>SNB-CPT</key>
 					<dict>
@@ -322,7 +381,7 @@
 					<key>Swap capslock and left control</key>
 					<false/>
 					<key>Swap command and option</key>
-					<true/>
+					<false/>
 					<key>Use ISO layout keyboard</key>
 					<false/>
 					<key>alt_handler_id</key>

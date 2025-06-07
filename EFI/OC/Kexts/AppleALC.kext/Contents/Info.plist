@@ -8663,24 +8663,30 @@
 					<true/>
 				</dict>
 				<dict>
+					<key>#ConfigData</key>
+					<data>
+					AdccAQHXHRAB1x6rAdcfAAFHHBABRx0BAUce
+					FwFHH5ABRwwCAhccIAIXHRACFx4rAhcfBAIX
+					DAIBJxwwAScdAQEnHqYBJx+3ATcc8AE3HREB
+					Nx4RATcfQQF3HPABdx0RAXceEQF3H0EBhxzw
+					AYcdEQGHHhEBhx9BAZcc8AGXHREBlx4RAZcf
+					QQGnHPABpx0RAaceEQGnH0EBtxzwAbcdEQG3
+					HhEBtx9BAbcMAgHnHPEB5x0SAeceEgHnH0I=
+					</data>
 					<key>AFGLowPowerState</key>
 					<data>
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>Unbelievable9 - Realtek ALC295/ALC3254 for Dell Latitude 5290</string>
+					<string>Realtek ALC295/ALC3254 for Dell Latitude 7400</string>
 					<key>CodecID</key>
 					<integer>283902613</integer>
 					<key>ConfigData</key>
 					<data>
-					ASccMAEnHQEBJx6mAScftwE3HPABNx0AATce
-					AAE3H0ABRxwQAUcdAQFHHhcBRx+QAUcMAgFn
-					HPABZx0AAWceAAFnH0ABdxzwAXcdAAF3HgAB
-					dx9AAYcc8AGHHQABhx4AAYcfQAGXHHABlx0g
-					AZceqwGXHwIBpxzwAacdAAGnHgABpx9AAbcc
-					8AG3GwABtx4AAbcfQAHXHPAB1x0AAdceAAHX
-					H0AB5xzwAecdAAHnHgAB5x9AAhccMAIXHRAC
-					Fx4rAhcfAgIXDAI=
+					AUccEAFHHQEBRx4XAUcfkAFHDAICFxwgAhcd
+					EAIXHisCFx8EAhcMAgEnHDABJx0BAScepgEn
+					H7cBtxzwAbcdEQG3HosBtx8EAbcMAgHnHPEB
+					5x0SAeceEgHnH0I=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
