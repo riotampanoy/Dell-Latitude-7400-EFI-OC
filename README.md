@@ -9,8 +9,7 @@ Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt
 
 <b>
 
-Before Install, boot from Flashdisk include This EFI..after show openpicker, press space bar to show OpenShell.efi, modGrubShell.efi, etc.
-Press enter modGRUBShell.efi
+Before Install, boot from Flashdisk where include this EFI. after show openpicker select modGRUBShell.efi
 
 | Setting                        | Command             |
 |:-------------------------------|:--------------------|
