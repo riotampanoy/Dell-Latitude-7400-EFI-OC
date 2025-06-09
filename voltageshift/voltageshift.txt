@@ -1,4 +1,4 @@
-systemextensionsctl developer on
+vsystemextensionsctl developer on
 
 sudo chown -R root:wheel VoltageShift.kext
 ./voltageshift info
@@ -18,5 +18,5 @@ sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 10 10 1 60 (Standard)
 sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)
 sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)
 
-Set Hapus Autorun
+Remove Launchd
 ./voltageshift removelaunchd
