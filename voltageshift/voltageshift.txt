@@ -5,7 +5,13 @@ sudo chown -R root:wheel VoltageShift.kext
 ./voltageshift mon
 
 Test Value 
+./voltageshift offset <CPU> <GPU> <CPUCache> <SystemAgent> <Analogy I/O> <Digital I/O>
+
 ./voltageshift offset -110 0 -110
+
+
+
+sudo ./voltageshift buildlaunchd <CPU> <GPU> <CPUCache> <SA> <AI/O> <DI/O> <turbo> <pl1> <pl2> <remain> <UpdateMins (0 only apply at bootup)>
 
 Set Autorun mau pilih yang turbo enable atau disable
 sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 10 10 1 60 (Standard)
