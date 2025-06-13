@@ -4,20 +4,20 @@ Before boot to Install macOS, update your Bios to version 1.39.0 and Thunderbolt
 
 Before Install, boot from Flashdisk where include this EFI. after show openpicker select modGRUBShell.efi
 
-| Setting                        | Command             |
-|:-------------------------------|:--------------------|
-| DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
-| DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
-| Disable CFG Lock               | setup_var 0x6ED 0x0 |
-| Enable Overclocking Feature    | setup_var 0x855 0x1 |
-| Disable Overclocking Lock      | setup_var 0x789 0x0 |
-| Enable Voltage Optimization    | setup_var 0x878 0x1 |
-| Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
-| DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
-| Enable Thunderbolt Usb Support | setup_var 0x4ED 0x1 |
-| DIMM profile                   | setup_var 0xA4F 0x00 (Disable XMP)|
-|                                 setup_var 0xA4F 0x2 (XMP Profile 1)|
-|                                 setup_var 0xA4F 0x3 (XMP Profile 2)|
+| Setting                             | Command             |
+|:------------------------------------|:--------------------|
+| DVMT Pre-Allocated 64M              | setup_var 0xA10 0x2 |
+| DVMT Total Gfx Mem MAX              | setup_var 0xA11 0x3 |
+| Disable CFG Lock                    | setup_var 0x6ED 0x0 |
+| Enable Overclocking Feature         | setup_var 0x855 0x1 |
+| Disable Overclocking Lock           | setup_var 0x789 0x0 |
+| Enable Voltage Optimization         | setup_var 0x878 0x1 |
+| Native BIOS Enumeration Mode        | setup_var 0x158C 0x1|
+| DisableThunderbolt Auto Switch      | setup_var 0x158B 0x0|
+| Enable Thunderbolt Usb Support      | setup_var 0x4ED 0x1 |
+| DIMM profile Default                | setup_var 0xA4F 0x00|
+| DIMM profile Default (XMP Profile 1)| setup_var 0xA4F 0x2 |
+| DIMM profile Default (XMP Profile 2)| setup_var 0xA4F 0x3 |
 
 After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
 
