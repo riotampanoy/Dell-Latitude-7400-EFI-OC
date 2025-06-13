@@ -24,9 +24,9 @@ After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove fram
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
-./voltageshift offset -110 0 -110</br>
-sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)</br>
-sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)</br>
+./voltageshift offset -120 -40 -120</br>
+sudo ./voltageshift buildlaunchd -120 -40 -120 -10 -10 -10 1 0 1 25 (Turbo Enable)</br>
+sudo ./voltageshift buildlaunchd -120 -40 -120 -10 -10 -10 0 0 1 25 (Turbo Disable)</br>
 </br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
