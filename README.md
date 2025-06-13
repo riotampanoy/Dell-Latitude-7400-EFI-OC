@@ -1,13 +1,6 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)<br>
-
-| WiFi                      | Command             | OS Version Command |
-|:-------------------------------------|:--------------------|:--------------------|
-|Intel WiFi |- rename config-Intel WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Rename #IOName to IOName at PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) Device Properties on Sequoia<br>- Root Patch with OCLP if installed Sequoia|
-|Broadcom WiFi |- rename config-Broadcom WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Root Patch with OCLP if Installed Sonoma/Sequoia|
-
-<b>
+Before boot to Install macOS, update your Bios to version 1.39.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)<br>
 
 Before Install, boot from Flashdisk where include this EFI. after show openpicker select modGRUBShell.efi
 
