@@ -15,7 +15,9 @@ Before Install, boot from Flashdisk where include this EFI. after show openpicke
 | Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
 | DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
 | Enable Thunderbolt Usb Support | setup_var 0x4ED 0x1 |
-| DIMM profile                   | setup_var 0xA4F<br>- Default 0x00<br>- XMP Profile 1 0x2<br>- XMP Profile 2 0x3|
+| DIMM profile                   | setup_var 0xA4F 0x00 (Disable XMP)|
+|                                | setup_var 0xA4F 0x2 (XMP Profile 1)|
+|                                | setup_var 0xA4F 0x3 (XMP Profile 2)|
 
 After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
 
