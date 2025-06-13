@@ -4,7 +4,7 @@ Before boot to Install macOS, update your Bios to version 1.39.0 and Thunderbolt
 
 Before Install, boot from Flashdisk where include this EFI. after show openpicker select modGRUBShell.efi
 
-| <strong><center>Setting</strong></center>| Command       |
+| <b>Setting</b>                      | <b>Command</b>      |
 |:------------------------------------|:--------------------|
 | DVMT Pre-Allocated 64M              | setup_var 0xA10 0x2 |
 | DVMT Total Gfx Mem MAX              | setup_var 0xA11 0x3 |
