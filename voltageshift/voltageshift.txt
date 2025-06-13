@@ -1,15 +1,22 @@
-systemextensionsctl developer on
+vsystemextensionsctl developer on
 
 sudo chown -R root:wheel VoltageShift.kext
 ./voltageshift info
 ./voltageshift mon
 
-Runing
-sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 10 10 1 60
+Test Value 
+./voltageshift offset <CPU> <GPU> <CPUCache> <SystemAgent> <Analogy I/O> <Digital I/O>
+
+./voltageshift offset -110 0 -110
+
+
+
+sudo ./voltageshift buildlaunchd <CPU> <GPU> <CPUCache> <SA> <AI/O> <DI/O> <turbo> <pl1> <pl2> <remain> <UpdateMins (0 only apply at bootup)>
 
 Set Autorun mau pilih yang turbo enable atau disable
+sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 10 10 1 60 (Standard)
 sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)
 sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)
 
-Set Hapus Autorun
+Remove Launchd
 ./voltageshift removelaunchd
