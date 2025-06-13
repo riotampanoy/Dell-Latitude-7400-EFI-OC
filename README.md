@@ -15,7 +15,7 @@ Before Install, boot from Flashdisk where include this EFI. after show openpicke
 | Native BIOS Enumeration Mode        | setup_var 0x158C 0x1|
 | DisableThunderbolt Auto Switch      | setup_var 0x158B 0x0|
 | Enable Thunderbolt Usb Support      | setup_var 0x4ED 0x1 |
-| DIMM profile Default                | setup_var 0xA4F 0x00|
+| DIMM profile Default                | setup_var 0xA4F 0x0|
 | DIMM profile Default (XMP Profile 1)| setup_var 0xA4F 0x2 |
 | DIMM profile Default (XMP Profile 2)| setup_var 0xA4F 0x3 |
 
