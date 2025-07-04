@@ -1,37 +1,32 @@
 <strong>DellLatitude 7400 Hackintosh OpenCore EFI</strong></br></br>
 
-Before boot to Install macOS, update your Bios to version 1.38.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)<br>
-
-| WiFi                      | Command             | OS Version Command |
-|:-------------------------------------|:--------------------|:--------------------|
-|Intel WiFi |- rename config-Intel WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Rename #IOName to IOName at PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0) Device Properties on Sequoia<br>- Root Patch with OCLP if installed Sequoia|
-|Broadcom WiFi |- rename config-Broadcom WiFi.plist to config.plist|- Enable SecureBoot Model on Misc if install Ventura<br>- Disable SecureBootModel on Misc if install Sonoma/Sequoia<br>- Root Patch with OCLP if Installed Sonoma/Sequoia|
-
-<b>
+Before boot to Install macOS, update your Bios to version 1.39.0 and Thunderbolt Firmware for activated Thunderbolt on Windows and mod UEFI variable with modGRUBShell.efi (on OpenCore picker press spacebar, choose modGRUBShell.efi and press enter/return)<br>
 
 Before Install, boot from Flashdisk where include this EFI. after show openpicker select modGRUBShell.efi
 
-| Setting                        | Command             |
-|:-------------------------------|:--------------------|
-| DVMT Pre-Allocated 64M         | setup_var 0xA10 0x2 |
-| DVMT Total Gfx Mem MAX         | setup_var 0xA11 0x3 |
-| Disable CFG Lock               | setup_var 0x6ED 0x0 |
-| Enable Overclocking Feature    | setup_var 0x855 0x1 |
-| Disable Overclocking Lock      | setup_var 0x789 0x0 |
-| Enable Voltage Optimization    | setup_var 0x878 0x1 |
-| Native BIOS Enumeration Mode   | setup_var 0x158C 0x1|
-| DisableThunderbolt Auto Switch | setup_var 0x158B 0x0|
-| Enable Thunderbolt Usb Support | setup_var 0x4ED 0x1 |
-| DIMM profile                   | setup_var 0xA4F<br>- Default 0x00<br>- XMP Profile 1 0x2<br>- XMP Profile 2 0x3|
+| <b>Setting</b>                      | <b>Command</b>      |
+|:------------------------------------|:--------------------|
+| DVMT Pre-Allocated 64M              | setup_var 0xA10 0x2 |
+| DVMT Total Gfx Mem MAX              | setup_var 0xA11 0x3 |
+| Disable CFG Lock                    | setup_var 0x6ED 0x0 |
+| Enable Overclocking Feature         | setup_var 0x855 0x1 |
+| Disable Overclocking Lock           | setup_var 0x789 0x0 |
+| Enable Voltage Optimization         | setup_var 0x878 0x1 |
+| Native BIOS Enumeration Mode        | setup_var 0x158C 0x1|
+| DisableThunderbolt Auto Switch      | setup_var 0x158B 0x0|
+| Enable Thunderbolt Usb Support      | setup_var 0x4ED 0x1 |
+| DIMM profile Default                | setup_var 0xA4F 0x0|
+| DIMM profile Default (XMP Profile 1)| setup_var 0xA4F 0x2 |
+| DIMM profile Default (XMP Profile 2)| setup_var 0xA4F 0x3 |
 
 After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
 
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
-./voltageshift offset -110 0 -110</br>
-sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 1 0 1 22 51 1 30 (Turbo Enable)</br>
-sudo ./voltageshift buildlaunchd -110 0 -110 0 0 0 0 0 1 22 51 1 30 (Turbo Disable)</br>
+./voltageshift offset -120 -40 -120</br>
+sudo ./voltageshift buildlaunchd -120 -40 -120 -10 -10 -10 1 0 1 25 (Turbo Enable)</br>
+sudo ./voltageshift buildlaunchd -120 -40 -120 -10 -10 -10 0 0 1 25 (Turbo Disable)</br>
 </br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
