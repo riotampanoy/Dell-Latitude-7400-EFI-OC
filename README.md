@@ -11,7 +11,7 @@ Before Install, boot from Flashdisk where include this EFI. after show openpicke
 | Disable CFG Lock                    | setup_var 0x6ED 0x0 |
 | Enable Overclocking Feature         | setup_var 0x855 0x1 |
 | Disable Overclocking Lock           | setup_var 0x789 0x0 |
-| Enable Voltage Optimization         | setup_var 0x878 0x2 |
+| Enable Voltage Optimization         | setup_var 0x878 0x1 |
 | DisableThunderbolt Auto Switch      | setup_var 0x158B 0x0|
 | Enable Thunderbolt Usb Support      | setup_var 0x4ED 0x1 |
 | Enable Type C Support               | setup_var 0x579 0x1 |
@@ -21,6 +21,8 @@ Before Install, boot from Flashdisk where include this EFI. after show openpicke
 | Enable SW SMI on TBT hot plug       | setup_var 0x4F5 0x1|
 | Enable ACPI Notify on TBTHot-plug   | setup_var 0x4F7 0x1|
 | Thunderbolt OS Select (Enable+RTD3) | setup_var 0x512 0x1|
+| Core Voltage Mode (Adaotive)        | setup_var 0x858 0x0|
+| BCLK Aware Adaotiuve Voltage       | setup_var 0x8A4 0x1|
 
 
 After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
