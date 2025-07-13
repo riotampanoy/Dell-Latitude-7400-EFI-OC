@@ -11,22 +11,27 @@ Before Install, boot from Flashdisk where include this EFI. after show openpicke
 | Disable CFG Lock                    | setup_var 0x6ED 0x0 |
 | Enable Overclocking Feature         | setup_var 0x855 0x1 |
 | Disable Overclocking Lock           | setup_var 0x789 0x0 |
-| Enable Voltage Optimization         | setup_var 0x878 0x1 |
-| Native BIOS Enumeration Mode        | setup_var 0x158C 0x1|
+| Enable Voltage Optimization         | setup_var 0x878 0x2 |
 | DisableThunderbolt Auto Switch      | setup_var 0x158B 0x0|
 | Enable Thunderbolt Usb Support      | setup_var 0x4ED 0x1 |
-| DIMM profile Default                | setup_var 0xA4F 0x0|
-| DIMM profile Default (XMP Profile 1)| setup_var 0xA4F 0x2 |
-| DIMM profile Default (XMP Profile 2)| setup_var 0xA4F 0x3 |
+| Enable Type C Support               | setup_var 0x579 0x1 |
+| Thunderbolt Adapter Configuration   | setup_var 0x1586 0x1|
+| Bios Enumeration Mode (Native)      | setup_var 0x158C 0x1|
+| Bios Enumeration Mode (Bios Assist) | setup_var 0x158C 0x0|
+| Enable SW SMI on TBT hot plug       | setup_var 0x4F5 0x1|
+| Enable ACPI Notify on TBTHot-plug   | setup_var 0x4F7 0x1|
+| Thunderbolt OS Select (Enable+RTD3) | setup_var 0x512 0x1|
+
 
 After success mod UEFI var uncheck AppleXcpmCfgLock Quick Kernel and remove framebuffer-fbmem and framebuffer-stolenmem IGPU Device Properties
 
 Voltage Shift</br>
 cd /*Path to Folder VoltageShift*/</br>
 sudo chown -R root:wheel VoltageShift.kext</br>
-./voltageshift offset -120 -40 -120</br>
-sudo ./voltageshift buildlaunchd -120 -40 -120 -10 -10 -10 1 0 1 25 (Turbo Enable)</br>
-sudo ./voltageshift buildlaunchd -120 -40 -120 -10 -10 -10 0 0 1 25 (Turbo Disable)</br>
+./voltageshift offset -110 -35 -110</br>
+sudo ./voltageshift buildlaunchd -95 -35 -95 -25 -25 -25 60</br>
+sudo ./voltageshift buildlaunchd -95 -35 -95 -25 -25 -25 1 0 1 22 51 1 30  (Turbo Enable)</br>
+sudo ./voltageshift buildlaunchd -95 -35 -95 -25 -25 -25 0 0 1 22 51 1 30  (Turbo Disable)</br>
 </br>
 Remove VoltageShift Launchd</br>
 cd /*Path to Folder VoltageShift*/</br>
